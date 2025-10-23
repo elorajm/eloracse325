@@ -1,0 +1,43 @@
+/.cache
+/.dotnet
+/.gitconfig
+/.lesshst
+/.nuget
+/.pytest_cache
+/.ssh
+/.templateengine
+/.viminfo
+/.vscode
+/AppData
+/Contacts
+/Documents
+/Downloads
+/Favorites
+/git
+/IntelGraphicsProfiles
+/Intro to Python.py
+/Links
+/MovieAppElora
+/Music
+/New folder
+/NTUSER.DAT
+/ntuser.dat.LOG1
+/ntuser.dat.LOG2
+/NTUSER.DAT{7ec62e30-cfa3-11ef-853a-e82edfc2bc88}.TM.blf
+/NTUSER.DAT{7ec62e30-cfa3-11ef-853a-e82edfc2bc88}.TMContainer00000000000000000001.regtrans-ms
+/NTUSER.DAT{7ec62e30-cfa3-11ef-853a-e82edfc2bc88}.TMContainer00000000000000000002.regtrans-ms
+/Postman
+/Saved Games
+/Searches
+/Videos
+/OneDrive
+/Application Data
+/My Documents
+/Local Settings
+/NetHood
+/Cookies
+/PrintHood
+/Recent
+/Start Menu
+/Templates
+/SendTo

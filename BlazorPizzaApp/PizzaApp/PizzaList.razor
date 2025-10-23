@@ -1,0 +1,61 @@
+@page "/pizzas"
+
+<!-- 
+    This is the main Pizza Menu page for our Blazor app.
+    It displays a list of pizzas, their descriptions, and their prices in U.S. currency.
+-->
+
+<h3>Pizza Menu</h3>
+
+<p>Welcome to our pizza shop! Below is the list of available pizzas and their prices.</p>
+
+<!-- 
+    The table below shows the pizza data. 
+    Each pizza is displayed with its name, description, and price.
+-->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Pizza Name</th>
+            <th>Description</th>
+            <th>Price (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pizza in pizzas)
+        {
+            <tr>
+                <!-- Display each pizza’s name -->
+                <td>@pizza.Name</td>
+
+                <!-- Display a short description -->
+                <td>@pizza.Description</td>
+
+                <!-- Display price formatted as U.S. currency -->
+                <td>@pizza.Price.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"))</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    // The Pizza class defines what a pizza looks like in our app.
+    // Each pizza has a name, a description, and a price.
+    public class Pizza
+    {
+        public string Name { get; set; }          // Name of the pizza
+        public string Description { get; set; }   // Short description
+        public decimal Price { get; set; }        // Price in dollars
+    }
+
+    // This is our in-memory "menu" list. 
+    // In a real app, this data might come from a database or an API.
+    private List<Pizza> pizzas = new List<Pizza>
+    {
+        new Pizza { Name = "Margherita", Description = "Classic tomato, mozzarella, and basil", Price = 8.50M },
+        new Pizza { Name = "Pepperoni", Description = "Spicy pepperoni and mozzarella", Price = 9.75M },
+        new Pizza { Name = "Hawaiian", Description = "Ham, pineapple, and cheese", Price = 10.00M },
+        new Pizza { Name = "Veggie Supreme", Description = "Bell peppers, mushrooms, olives, and onions", Price = 9.25M },
+        new Pizza { Name = "BBQ Chicken", Description = "Smoky BBQ sauce with grilled chicken and red onions", Price = 11.00M }
+    };
+}

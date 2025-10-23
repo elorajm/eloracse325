@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+
+<!-- 
+    MainLayout.razor
+    This is the root layout for the Blazor app.
+    It defines the structure of every page — the nav bar at the top,
+    the main content area in the middle, and the footer at the bottom.
+-->
+
+<div class="page bg-light d-flex flex-column min-vh-100">
+    <!-- Navigation Menu -->
+    <!-- This renders the NavMenu.razor component that holds your top navigation links -->
+    <header>
+        <NavMenu />
+    </header>
+
+    <!-- Main content area -->
+    <!-- @Body is where the current page's content (Home, Pizza List, etc.) is rendered -->
+    <main class="flex-fill p-4">
+        @Body
+    </main>
+
+    <!-- Footer -->
+    <!-- This renders the Footer.razor component that shows your name and country -->
+    <footer>
+        <Footer />
+    </footer>
+</div>
+
+@code {
+    // No C# code is needed in the layout for now.
+    // The layout simply arranges the components on every page.
+}

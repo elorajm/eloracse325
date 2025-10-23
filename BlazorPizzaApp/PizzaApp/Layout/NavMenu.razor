@@ -1,0 +1,73 @@
+﻿<!--
+    NavMenu.razor
+    This component defines the navigation bar (menu) that appears at the top of the app.
+    It uses Bootstrap classes for styling and Blazor's <NavLink> for routing between pages.
+-->
+
+@using Microsoft.AspNetCore.Components.Routing
+
+<!-- Top row: app title and hamburger (toggle) button -->
+
+<div class="top-row ps-3 navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- App title -->
+        <a class="navbar-brand" href="">PizzaApp</a>
+
+        <!-- Toggler button for small screens -->
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Navigation links -->
+<!-- The class below switches between collapsed and expanded depending on the screen size -->
+<div class="@NavMenuCssClass nav-scrollable bg-dark">
+    <nav class="nav flex-column">
+        <!-- Home link -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link text-white" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span>
+                Home
+            </NavLink>
+        </div>
+
+        <!-- Counter link -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link text-white" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span>
+                Counter
+            </NavLink>
+        </div>
+
+        <!-- Weather link -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link text-white" href="weather">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span>
+                Weather
+            </NavLink>
+        </div>
+
+        <!-- NEW: Pizza List link -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link text-white" href="pizzas">
+                <span class="bi bi-basket-fill-nav-menu" aria-hidden="true"></span>
+                Pizza List
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    // Controls whether the navigation menu is collapsed (for smaller screens)
+    private bool collapseNavMenu = true;
+
+    // When true, hides the menu (Bootstrap "collapse" class); when false, shows it
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    // Toggles the menu open/closed when the hamburger button is clicked
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
