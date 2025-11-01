@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qSDAvdOpnZM=",
+  "dgSpecHash": "fc35QXnBnY4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\elora\\BlazorPizzaApp\\PizzaApp\\PizzaApp.csproj",
+  "projectFilePath": "C:\\Users\\elora\\GitRepo\\eloracse325\\BlazorPizzaApp\\PizzaApp\\PizzaApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elora\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.9\\microsoft.aspnetcore.authorization.9.0.9.nupkg.sha512",
     "C:\\Users\\elora\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.9\\microsoft.aspnetcore.components.9.0.9.nupkg.sha512",

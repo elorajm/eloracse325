@@ -1762,11 +1762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elora\\BlazorPizzaApp\\PizzaApp\\PizzaApp.csproj",
+      "projectUniqueName": "C:\\Users\\elora\\GitRepo\\eloracse325\\BlazorPizzaApp\\PizzaApp\\PizzaApp.csproj",
       "projectName": "PizzaApp",
-      "projectPath": "C:\\Users\\elora\\BlazorPizzaApp\\PizzaApp\\PizzaApp.csproj",
+      "projectPath": "C:\\Users\\elora\\GitRepo\\eloracse325\\BlazorPizzaApp\\PizzaApp\\PizzaApp.csproj",
       "packagesPath": "C:\\Users\\elora\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elora\\BlazorPizzaApp\\PizzaApp\\obj\\",
+      "outputPath": "C:\\Users\\elora\\GitRepo\\eloracse325\\BlazorPizzaApp\\PizzaApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elora\\AppData\\Roaming\\NuGet\\NuGet.Config"
